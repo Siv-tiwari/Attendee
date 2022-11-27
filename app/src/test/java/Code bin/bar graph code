@@ -1,0 +1,64 @@
+// imports :
+//    private BarChart barChart;
+//    public static final int MAX_X_VALUE = 7;
+//    public static final int MAX_Y_VALUE = 50;
+//    public static final int MIN_Y_VALUE = 5;
+//    public static final String LABLE = "Attendence";
+//    public static final String[] DAYS = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" };
+//    Random random;
+
+
+
+//        random = new Random();
+//        barChart = findViewById(R.id.bar_chart);
+//        BarData data = createChartData();
+//        configure_chart_appearance();
+//        prepareChartData(data);
+
+
+
+//    private BarData createChartData(){
+//        ArrayList<BarEntry> value = new ArrayList<>();
+//        for (int i = 0; i < MAX_X_VALUE; i++) {
+//            float x = i;
+//            float y = random.nextInt((MAX_Y_VALUE - MIN_Y_VALUE)+1) + MIN_Y_VALUE;
+//            value.add(new BarEntry(x,y));
+//        }
+//        BarDataSet set = new BarDataSet(value,LABLE);
+//        ArrayList<IBarDataSet> dataSets = new ArrayList<>();
+//        dataSets.add(set);
+//
+//        BarData data = new BarData(dataSets);
+//        return data;
+//    }
+//
+//    private void configure_chart_appearance(){
+//        barChart.getDescription().setEnabled(false);
+//        barChart.setDrawValueAboveBar(false);
+//        barChart.setDrawGridBackground(false);
+//
+//
+//        XAxis x_axis = barChart.getXAxis();
+//        x_axis.setValueFormatter(new ValueFormatter() {
+//            @Override
+//            public String getFormattedValue(float value) {
+//                return DAYS[(int) value];
+//            }
+//        });
+//
+//        YAxis axis_left = barChart.getAxisLeft();
+//        axis_left.setDrawGridLines(false);
+//        axis_left.setGranularity(10f);
+//        axis_left.setAxisMinimum(0);
+//
+//        YAxis axis_right = barChart.getAxisRight();
+//        axis_right.setDrawGridLines(false);
+//        axis_right.setGranularity(10f);
+//        axis_right.setAxisMinimum(0);
+//    }
+//
+//    private void prepareChartData(BarData data){
+//        data.setValueTextSize(12f);
+//        barChart.setData(data);
+//        barChart.invalidate();
+//    }

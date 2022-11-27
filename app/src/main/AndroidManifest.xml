@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".view_message"
+            android:exported="false" />
+        <activity
+            android:name=".create_message"
+            android:exported="false" />
+        <activity
+            android:name=".manual_take_attendance"
+            android:exported="false" />
+        <activity
+            android:name=".QR_take_attendance"
+            android:exported="false" />
+        <activity
+            android:name=".user_all_data_view"
+            android:exported="false" />
+        <activity
+            android:name=".staff"
+            android:exported="false" />
+        <activity
+            android:name=".student"
+            android:exported="false" />
+        <activity
+            android:name=".generate_qr"
+            android:exported="false" />
+        <activity
+            android:name=".scan_qr"
+            android:exported="false" />
+        <activity
+            android:name=".new_user_signup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

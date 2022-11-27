@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".user_all_data_view">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        app:cardCornerRadius="90dp"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/user_detail_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Shubham Tiwari"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="140dp"
+                android:background="@drawable/rounded_outline"
+                android:clipToOutline="true"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/user_detail_fullname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:visibility="visible"
+                android:id="@+id/select_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:text="select Image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"/>
+
+
+            <TextView
+                android:id="@+id/user_detail_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_photo"
+                android:text="Username : siv_webster"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/user_detail_sap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_detail_username"
+                android:textColor="@color/black"
+                android:text="SAP : 1000014083"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/user_detail_rollno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_detail_sap"
+                android:textColor="@color/black"
+                android:text="Roll no. : 200102012"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/card_view_1"
+        app:cardCornerRadius="80dp"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/change_password_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/change_password"
+                android:layout_marginLeft="50dp"
+                android:background="#00000000"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/change_user_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/change_user"
+                android:background="#00000000"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/change_password_text"
+                android:layout_width="70dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:id="@+id/change_user_text"
+                android:layout_width="70dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Change user"
+                android:layout_marginLeft="65dp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
